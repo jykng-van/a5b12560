@@ -1,0 +1,100 @@
+#activity-list{
+    left:calc(-1 * var(--app-width));
+    padding: 0px 20px 10px;
+    display:flex;
+    flex-direction: column;
+}
+#activity-list.current-mode{
+    left:0;
+}
+#activity-list .list-actions{
+    padding:7px 0;
+}
+#activity-list .list, #activity-list .empty-list{
+    flex:1;
+}
+#activity-list .list{
+    padding-top:20px;
+}
+.empty-list{
+    font-size:1.3em;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.list-actions{
+    align-self:center;
+}
+.archive-button{
+    background:var(--aircall-grey);
+    color:#fff;
+    font-size:1.3em;
+    border-radius:7px;
+    border:0;
+    padding:3px 20px;
+}
+
+.date-group{
+    border-top: 2px rgba(0,0,0,.2) dotted;
+    margin-bottom:25px;
+}
+.date-group > .date{
+    text-align: center;
+    color:var(--aircall-grey);
+    font-size:1.25em;
+}
+.date-group > .date span{
+    position:relative;
+    top:-8px;
+    background:#fff;
+    display:inline-block;
+    padding:0 5px;
+}
+
+.card{
+    border:1px solid rgba(0,0,0,.1);
+    border-radius:5px;
+    padding:7px;
+    margin-bottom:10px;
+    box-shadow:1px 1px 2px rgba(0,0,0,.1);
+    display:block;
+    color:#131313;
+    text-decoration: none;
+    font-size:1.1em;
+}
+.card-header{
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.card-body{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.incoming, .outgoing{
+    padding-left:20px;
+    background:no-repeat left center / contain;
+}
+.incoming{
+    background-image:url(/public/call_received.svg);
+}
+.outgoing{
+    background-image:url(/public/call_made.svg);
+}
+.call-date{
+    text-align:right;
+}
+.call-date .date{
+    font-weight:bold;
+}
+.call-date .time{
+    font-style:italic;
+}
+.card-body .missed{
+    color:#df3321;
+}
+.card-body .voicemail{
+    color:#ce8622;
+}
