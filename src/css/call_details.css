@@ -16,10 +16,10 @@
     margin-bottom:5px;
 }
 .details-header .incoming{
-    background-image:url(/public/call_received.svg);
+    background-image:url(/call_received.svg);
 }
 .details-header .outgoing{
-    background-image:url(/public/call_made.svg);
+    background-image:url(/call_made.svg);
 }
 .details-header .back-button{
     color:var(--aircall-grey);

@@ -78,10 +78,10 @@
     background:no-repeat left center / contain;
 }
 .incoming{
-    background-image:url(/public/call_received.svg);
+    background-image:url(/call_received.svg);
 }
 .outgoing{
-    background-image:url(/public/call_made.svg);
+    background-image:url(/call_made.svg);
 }
 .call-date{
     text-align:right;
