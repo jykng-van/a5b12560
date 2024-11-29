@@ -1,0 +1,12 @@
+.details-header .incoming{
+    background-image:url(img/call_received.svg);
+}
+.details-header .outgoing{
+    background-image:url(img/call_made.svg);
+}
+.incoming{
+    background-image:url(img/call_received.svg);
+}
+.outgoing{
+    background-image:url(img/call_made.svg);
+}
