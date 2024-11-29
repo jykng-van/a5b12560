@@ -66,6 +66,7 @@ const App = () => {
         setActivities(res.data);
       }).catch(ex=>{
         console.error(ex);
+        setTimeout(getActivities, 5000);
     });
   }
 

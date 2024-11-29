@@ -75,14 +75,17 @@
 }
 .incoming, .outgoing{
     padding-left:20px;
-    background:no-repeat left center / contain;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size:contain;
 }
 .incoming{
-    background-image:url(/call_received.svg);
+    background-image:var(--incoming-img);
 }
 .outgoing{
-    background-image:url(/call_made.svg);
+    background-image:var(--outgoing-img);
 }
+
 .call-date{
     text-align:right;
 }

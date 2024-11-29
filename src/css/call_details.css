@@ -12,15 +12,18 @@
 .details-header h2{
     font-size:1.5em;
     padding-left:20px;
-    background:no-repeat left center / contain;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size:contain;
     margin-bottom:5px;
 }
-.details-header .incoming{
-    background-image:url(/call_received.svg);
+.details-header h2.incoming{
+    background-image:var(--incoming-img);
 }
-.details-header .outgoing{
-    background-image:url(/call_made.svg);
+.details-header h2.outoing{
+    background-image:var(--outoing-img);
 }
+
 .details-header .back-button{
     color:var(--aircall-grey);
     position:absolute;
